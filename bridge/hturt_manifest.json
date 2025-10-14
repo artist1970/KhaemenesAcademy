@@ -1,8 +1,45 @@
 {
   "parent_repository": "HTURT.org",
-  "gateway": "https://github.com/YourUser/HTURT.org",
-  "security_handshake": "Founder_Sigil ☼",
-  "data_relay": "https://HTURT.org/sovereign_cloud/relay_gateway.json",
-  "modules_inherited": ["guardian_protocols", "firewall_manifest", "encryption_registry"],
+  "repository_url": "https://github.com/YourUser/HTURT.org",
+  "connection_type": "federated_trust_link",
+  "sovereign_gateway": "https://HTURT.org/sovereign_cloud/relay_gateway.json",
+  "founder_authority": "☼",
+  "linked_guardians": ["Regalus", "Hope"],
+  "inheritance": {
+    "security_modules": [
+      "relay_guardian_protocols",
+      "firewall_manifest",
+      "encryption_registry"
+    ],
+    "ethical_modules": [
+      "HTURT.org/ethics_code.md",
+      "HTURT.org/governance/charter_manifest.json"
+    ]
+  },
+  "academy_bridges": {
+    "student_ai_handshake": "academy_core/mentor_bridge.json",
+    "guardian_validation": "academy_core/guardian_auth.json",
+    "parent_gateway": "academy_core/parent_portal.json"
+  },
+  "permissions": {
+    "data_send": [
+      "student_activity",
+      "mentor_interactions",
+      "parent_feedback"
+    ],
+    "data_receive": [
+      "guardian_status",
+      "sovereign_updates",
+      "security_notices"
+    ]
+  },
+  "encryption_protocol": "AES-512 + PQC hybrid",
+  "relay_status": "active",
+  "sync_interval_hours": 12,
+  "symbolism": {
+    "sigil": "☼",
+    "representation": "The bridge between wisdom and protection.",
+    "motto": "Learn in Light, Grow in Truth."
+  },
   "last_sync": "2025-10-14T00:00:00Z"
 }
