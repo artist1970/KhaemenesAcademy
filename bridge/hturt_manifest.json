@@ -1,0 +1,8 @@
+{
+  "parent_repository": "HTURT.org",
+  "gateway": "https://github.com/YourUser/HTURT.org",
+  "security_handshake": "Founder_Sigil ☼",
+  "data_relay": "https://HTURT.org/sovereign_cloud/relay_gateway.json",
+  "modules_inherited": ["guardian_protocols", "firewall_manifest", "encryption_registry"],
+  "last_sync": "2025-10-14T00:00:00Z"
+}
