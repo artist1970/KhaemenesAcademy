@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurora Portal — Language Refinement Core</title>
+  <style>
+    body {
+      font-family: "Segoe UI", system-ui, sans-serif;
+      background: radial-gradient(circle at top left, #f7f8fa, #eaecef);
+      color: #333;
+      margin: 0; padding: 0;
+      display: flex; flex-direction: column; align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #b3e5fc, #e1bee7);
+      color: #222;
+      width: 100%;
+      text-align: center;
+      padding: 1.5rem 0;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+    main {
+      flex: 1;
+      width: 90%;
+      max-width: 800px;
+      margin-top: 2rem;
+    }
+    textarea {
+      width: 100%;
+      height: 180px;
+      font-size: 16px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      background: #fff;
+    }
+    select, button {
+      margin-top: 12px;
+      font-size: 16px;
+      padding: 10px 14px;
+      border-radius: 6px;
+      border: none;
+    }
+    button {
+      background-color: #64b5f6;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background-color: #1976d2;
+    }
+    #output {
+      margin-top: 20px;
+      background: #fff;
+      padding: 14px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      min-height: 120px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1>🌸 Aurora Portal</h1>
+    <p>Language Refinement Core — Sovereign v8.2</p>
+  </header>
+
+  <main>
+    <label for="inputText"><strong>Enter Text to Refine:</strong></label>
+    <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+
+    <div>
+      <label for="mode">Mode:</label>
+      <select id="mode">
+        <option value="light">Light</option>
+        <option value="rich">Rich</option>
+      </select>
+    </div>
+
+    <button onclick="refineText()">✨ Refine Text</button>
+
+    <h3>Refined Output:</h3>
+    <div id="output">Your refined text will appear here...</div>
+  </main>
+
+  <footer>
+    Aurora Language Refinement Core v8.2 — © Khaemenes Academy, 2025
+  </footer>
+
+  <script src="aurora_v8.2.js"></script>
+  <script>
+    function refineText() {
+      const text = document.getElementById("inputText").value.trim();
+      const mode = document.getElementById("mode").value;
+      if (!text) {
+        document.getElementById("output").innerText = "Please enter text first.";
+        return;
+      }
+      const refined = AURORA.presets[mode](text, { seed: 1234, tier: 0 });
+      document.getElementById("output").innerText = refined;
+    }
+  </script>
+</body>
+</html>
