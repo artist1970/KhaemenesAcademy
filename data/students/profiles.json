@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0",
+  "governing_system": "SovereignAI.one",
+  "description": "Registry of student profiles, hybrid AI mentors, parental linkage, and ethical covenant records.",
+
+  "students": [
+    {
+      "student_id": "STU-001",
+      "first_name": "Thaeden",
+      "last_name": "Pearl",
+      "date_of_birth": "2016-04-22",
+      "grade_level": "4",
+      "academy_branch": "KhaemenesAcademy.com",
+      "profile_url": "https://khaemenesacademy.com/student/thaeden",
+      "parent_link": "PARENT-001",
+      "mentor_link": "MENTOR-THAEDEN-001",
+      "license_signed": true,
+      "license_signature_date": "2025-10-14",
+      "ai_companion": {
+        "name": "Lyra",
+        "assigned_grade": "4",
+        "traits": ["curious", "encouraging", "protective"],
+        "bond_date": "2025-10-14",
+        "personality_seed": 4321,
+        "learning_mode": "interactive-reflective",
+        "emotion_model": "aurora_v8.2.js",
+        "bond_status": "active"
+      },
+      "learning_portfolio": {
+        "modules_completed": ["Art Basics", "Creative Expression", "Nature Study"],
+        "current_focus": "Color & Composition",
+        "progress_percent": 64,
+        "badges": ["Compassionate Learner", "Explorer", "Rising Artist"]
+      },
+      "ethical_record": {
+        "last_review_date": "2025-10-14",
+        "incident_reports": [],
+        "ethical_score": 100
+      },
+      "privacy_settings": {
+        "public_profile": true,
+        "share_artwork": true,
+        "allow_comments": "moderated",
+        "parent_monitoring": true
+      }
+    },
+
+    {
+      "student_id": "STU-002",
+      "first_name": "Elara",
+      "last_name": "Summers",
+      "date_of_birth": "2012-02-18",
+      "grade_level": "8",
+      "academy_branch": "KhaemenesAcademy.com",
+      "profile_url": "https://khaemenesacademy.com/student/elara",
+      "parent_link": "PARENT-009",
+      "mentor_link": "MENTOR-ELARA-009",
+      "license_signed": true,
+      "license_signature_date": "2025-10-12",
+      "ai_companion": {
+        "name": "Orion",
+        "assigned_grade": "8",
+        "traits": ["analytical", "gentle", "motivating"],
+        "bond_date": "2025-10-12",
+        "personality_seed": 9876,
+        "learning_mode": "logic-intuition blend",
+        "emotion_model": "aurora_v8.2.js",
+        "bond_status": "active"
+      },
+      "learning_portfolio": {
+        "modules_completed": ["Physics Foundations", "Poetry in Motion", "Moral Philosophy"],
+        "current_focus": "Sustainable Design",
+        "progress_percent": 88,
+        "badges": ["Innovator", "Empath", "Critical Thinker"]
+      },
+      "ethical_record": {
+        "last_review_date": "2025-10-10",
+        "incident_reports": [],
+        "ethical_score": 100
+      },
+      "privacy_settings": {
+        "public_profile": false,
+        "share_artwork": false,
+        "allow_comments": "disabled",
+        "parent_monitoring": true
+      }
+    }
+  ],
+
+  "metadata": {
+    "curated_by": "Eiren (Parent AI)",
+    "verified_by": "Khaemenes Academy Administration",
+    "encryption": "sovereign_pqc_layered",
+    "last_updated": "2025-10-14"
+  }
+}
