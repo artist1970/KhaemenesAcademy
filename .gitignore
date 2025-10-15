@@ -1,0 +1,198 @@
+# ============================
+# KHEMAENES ACADEMY .GITIGNORE
+# ============================
+
+# ----------------------------
+# System / OS files
+# ----------------------------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+Icon?
+__MACOSX/
+
+# ----------------------------
+# Python
+# ----------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environment
+venv/
+ENV/
+env/
+.venv/
+env.bak/
+python_env/
+Pipfile.lock
+poetry.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.pyre/
+
+# ----------------------------
+# Node / Frontend
+# ----------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.next/
+out/
+coverage/
+.vscode/
+.idea/
+.DS_Store
+
+# ----------------------------
+# Environment / Configuration
+# ----------------------------
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+.env.staging
+
+# ----------------------------
+# Database / Cache
+# ----------------------------
+*.db
+*.sqlite3
+*.sqlite
+__pycache__/
+migrations/
+cache/
+tmp/
+postgres_data/
+*.log
+*.bak
+
+# ----------------------------
+# JSON / Sensitive Data
+# ----------------------------
+mentor_core.json
+parent_mentor_core.json
+student_private_data.json
+academy_settings.json
+api_keys.json
+keys/
+secrets/
+*.key
+*.pem
+
+# ----------------------------
+# Compiled / Build Files
+# ----------------------------
+*.out
+*.class
+*.o
+*.so
+*.dll
+*.exe
+*.bin
+*.obj
+
+# ----------------------------
+# Logs / Reports
+# ----------------------------
+*.log
+*.pid
+*.seed
+*.pid.lock
+logs/
+log/
+*.tar.gz
+*.zip
+*.7z
+*.gz
+*.bak
+
+# ----------------------------
+# Docs / Exports
+# ----------------------------
+/docs/__pycache__/
+/docs/build/
+/docs/temp/
+/docs/*.pdf
+/docs/*.tmp
+
+# ----------------------------
+# Wix / Temporary Bridge Files
+# ----------------------------
+/bridge/temp/
+/bridge/uploads/
+/bridge/.cache/
+/bridge/.session/
+
+# ----------------------------
+# Docker / Deployment
+# ----------------------------
+docker-compose.override.yml
+docker-compose-dev.yml
+docker-compose.local.yml
+.docker/
+.dockerignore
+Dockerfile.dev
+*.tar
+*.img
+
+# ----------------------------
+# Miscellaneous
+# ----------------------------
+*.swp
+*.swo
+*.tmp
+*.bak
+*.old
+*.orig
+*.rej
+*.user
+*.sublime-workspace
+*.sublime-project
+
+# ----------------------------
+# End of File
+# ----------------------------
