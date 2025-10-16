@@ -1,0 +1,9 @@
+{
+  "font_family": "Sovereign Academy",
+  "version": "1.0.0",
+  "license": "SIL Open Font License 1.1",
+  "author": "Archaemenes Academy Typography Division",
+  "last_build": "2025-10-16",
+  "source": "src/glyphs/",
+  "output": "fonts/SovereignAcademy-Regular.ttf"
+}
