@@ -1,1 +1,104 @@
 
+#!/usr/bin/env fontforge
+# ==========================================================
+# SovereignAcademy-font/build/build-font.pe
+# ==========================================================
+# FontForge script to generate SovereignAcademy-Regular.ttf
+# from individual SVG glyphs in src/glyphs/.
+# ----------------------------------------------------------
+# Author: Archaemenes Academy — Sovereign Cloud Division
+# Founder: Jennifer Kay Pearl
+# Codex Steward: Regalus
+# Type Engineer: Zaira (AI Integration)
+# ==========================================================
+
+# --- SETTINGS ---
+fontname = "SovereignAcademy-Regular"
+familyname = "Sovereign Academy"
+fullname = "SovereignAcademy-Regular"
+output_path = "../fonts/" + fontname + ".ttf"
+glyph_src = "../src/glyphs/"
+
+# Create new font object
+Print("Creating new font: " + familyname)
+New()
+SetFontNames(fontname, familyname, fullname, "Regular", "")
+ScaleToEm(1000, 0)
+
+# Basic metadata
+SetTTFName(0x409, 1, familyname)          # Family
+SetTTFName(0x409, 2, "Regular")           # Subfamily
+SetTTFName(0x409, 4, fullname)            # Full Name
+SetTTFName(0x409, 5, "Version 1.0")       # Version
+SetTTFName(0x409, 9, "Sovereign Cloud Division / PLERA") # Designer
+SetTTFName(0x409, 11, "https://archaemenesacademy.com")   # URL
+
+# --- IMPORT GLYPHS ---
+# Import uppercase A–Z
+foreach c (65, 90)
+  glyphname = Char(c)
+  filename = glyph_src + glyphname + ".svg"
+  if (FileExists(filename))
+    SelectNone()
+    Select(c)
+    Import(filename)
+    Print("Imported glyph: " + glyphname)
+  else
+    Print("Missing glyph: " + glyphname)
+  endif
+endloop
+
+# Import lowercase a–z
+foreach c (97, 122)
+  glyphname = Char(c)
+  filename = glyph_src + glyphname + ".svg"
+  if (FileExists(filename))
+    SelectNone()
+    Select(c)
+    Import(filename)
+    Print("Imported glyph: " + glyphname)
+  else
+    Print("Missing glyph: " + glyphname)
+  endif
+endloop
+
+# --- OPTIONAL NUMERALS 0–9 ---
+foreach c (48, 57)
+  glyphname = Char(c)
+  filename = glyph_src + glyphname + ".svg"
+  if (FileExists(filename))
+    SelectNone()
+    Select(c)
+    Import(filename)
+    Print("Imported glyph: " + glyphname)
+  endif
+endloop
+
+# --- CLEANUP & BUILD ---
+SelectAll()
+RemoveOverlap()
+Simplify(0, 0, 0)
+RoundToInt()
+CorrectDirection()
+
+# Metrics
+SetWidth(600)
+SetAscent(800)
+SetDescent(200)
+
+# --- GENERATE FONT ---
+Generate(output_path)
+Print("✅ Font generated: " + output_path)
+
+Quit()
+🧭 How to Run
+bash
+Copy code
+cd KhaemenesAcademy/toolkit/SovereignAcademy-font/build
+fontforge -script build-font.pe
+🧩 Result
+Creates:
+
+bash
+Copy code
+../fonts/SovereignAcademy-Regular.ttf
