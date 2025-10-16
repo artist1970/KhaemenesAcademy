@@ -1,0 +1,17 @@
+# FontForge build artifacts
+fonts/*.ttf
+fonts/*.otf
+*.log
+*.bak
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
