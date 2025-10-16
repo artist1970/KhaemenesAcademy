@@ -1,0 +1,20 @@
+{
+  "letters": [
+    {
+      "id": "A",
+      "card": "prek/alphabet/A/card.png",
+      "activity": "prek/alphabet/A/activity.md",
+      "storytime": "prek/alphabet/A/storytime.mp3",
+      "coloring": "prek/alphabet/A/coloring.pdf",
+      "song": "prek/alphabet/A/song.mp3"
+    },
+    {
+      "id": "B",
+      "card": "prek/alphabet/B/card.png",
+      "activity": "prek/alphabet/B/activity.md",
+      "storytime": "prek/alphabet/B/storytime.mp3",
+      "coloring": "prek/alphabet/B/coloring.pdf",
+      "song": "prek/alphabet/B/song.mp3"
+    }
+  ]
+}
