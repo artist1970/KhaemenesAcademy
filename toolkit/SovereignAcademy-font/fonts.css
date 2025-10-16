@@ -1,0 +1,47 @@
+/* ==========================================================
+   Sovereign Academy — Font CSS
+   ==========================================================
+   Defines @font-face and basic usage examples.
+   ---------------------------------------------------------- */
+
+@font-face {
+  font-family: 'Sovereign Academy';
+  src: url('../fonts/SovereignAcademy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional: graceful fallbacks for content still loading */
+body,
+html {
+  font-family: 'Sovereign Academy', 'Cinzel', 'Brandon Grotesque',
+               'Georgia', 'Times New Roman', serif;
+}
+
+/* Utility class for brand-signature styling */
+.font-sovereign {
+  font-family: 'Sovereign Academy', serif;
+  letter-spacing: 0.05em;
+}
+
+/* Example accent for golden branding text */
+.sovereign-gold {
+  color: #9a7b31;
+}
+
+/* Light parchment background suggestion (optional demo use) */
+.parchment-bg {
+  background: #f6f1e7
+              url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  color: #2b1e14;
+}
+✅ Usage
+
+html
+Copy code
+<link rel="stylesheet" href="fonts.css/fonts.css" />
+
+<p class="font-sovereign sovereign-gold">
+  ✦ Khaemenes Academy ✦
+</p>
