@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1000"
+  height="1000"
+  viewBox="0 0 1000 1000">
+
+  <!-- Sovereign Academy Font Glyph: A -->
+  <!-- Canvas: 1000×1000 units, baseline at y=0 -->
+  <path
+    fill="#000000"
+    d="M480 950 L80 50 L180 50 L300 350 H700 L820 50 L920 50 L520 950 Z
+       M340 450 L660 450 L500 830 Z" />
+</svg>
