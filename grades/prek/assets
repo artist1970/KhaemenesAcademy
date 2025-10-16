@@ -1,0 +1,47 @@
+Images (JPEG, PNG, SVG, etc.)
+
+Alphabet cards (A.png, B.png, etc.)
+
+Coloring sheets
+
+Activity icons
+
+Audio (MP3, WAV, OGG, etc.)
+
+Sing-along songs (A_song.mp3)
+
+Phonics sounds (“A says ah!”)
+
+PDFs
+
+Printable worksheets
+
+Parent guides
+
+Videos (if used)
+
+Storytime videos
+
+Custom Fonts (OTF, TTF)
+
+If you want Pre-K to have special fonts for letters
+
+grades/
+└── prek/
+    └── assets/
+        ├── images/
+        │   ├── A_card.png
+        │   ├── B_card.png
+        │   └── ...etc.
+        ├── audio/
+        │   ├── a_sound.mp3
+        │   ├── b_song.mp3
+        │   └── ...etc.
+        ├── coloring/
+        │   ├── apple_coloring.pdf
+        │   ├── ball_coloring.pdf
+        │   └── ...etc.
+        ├── fonts/
+        │   └── kid_font.otf
+        └── instructions/
+            └── parents_guide.pdf
