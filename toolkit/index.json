@@ -1,0 +1,22 @@
+{
+  "fonts": {
+    "default": "toolkit/fonts/SovereignAcademy-Regular.ttf",
+    "bold": "toolkit/fonts/SovereignAcademy-Bold.ttf"
+  },
+  "icons": {
+    "book": "toolkit/icons/book.svg",
+    "music": "toolkit/icons/music.svg",
+    "star": "toolkit/icons/star.svg"
+  },
+  "sounds": {
+    "click": "toolkit/sounds/click.wav",
+    "success": "toolkit/sounds/success.mp3",
+    "error": "toolkit/sounds/error.mp3"
+  },
+  "templates": {
+    "storytime": "toolkit/templates/storytime.html",
+    "coloring": "toolkit/templates/coloring.html",
+    "music": "toolkit/templates/music.html",
+    "quiz": "toolkit/templates/quiz.html"
+  }
+}
