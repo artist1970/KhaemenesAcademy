@@ -193,6 +193,8 @@ Dockerfile.dev
 *.sublime-workspace
 *.sublime-project
 
+# Personal notes
+.local_notes.txt
 # ----------------------------
 # End of File
 # ----------------------------
