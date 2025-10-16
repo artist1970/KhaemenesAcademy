@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sovereign Academy Font — Glyph Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #f6f1e7 url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+      font-family: "Cinzel", serif;
+      color: #2b1e14;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2em;
+      color: #3a2a19;
+      border-bottom: 2px solid #c7a44a;
+      display: inline-block;
+      padding-bottom: 6px;
+      margin: 0 auto 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .glyph {
+      background: #fffdf7b3;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+
+    .glyph:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    }
+
+    .glyph img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    .glyph label {
+      font-size: 1em;
+      color: #5a4630;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #7a6a56;
+    }
+  </style>
+</head>
+<body>
+  <center><h1>🕊️ Sovereign Academy Font — Glyph Preview</h1></center>
+
+  <div class="grid" id="glyphGrid">
+    <!-- JS dynamically loads all glyphs -->
+  </div>
+
+  <footer>
+    © 2025 Archaemenes Academy • Sovereign Font Bank  
+    <br />
+    <a href="../README.md" target="_blank" style="color:#9a7b31;text-decoration:none;">View Documentation</a>
+  </footer>
+
+  <script>
+    // List expected glyph filenames for quick inspection
+    const glyphNames = [
+      ..."ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+      ..."abcdefghijklmnopqrstuvwxyz",
+      ..."0123456789",
+      "period","comma","exclamation","question","dash","ampersand"
+    ];
+
+    const grid = document.getElementById("glyphGrid");
+
+    glyphNames.forEach(name => {
+      const cell = document.createElement("div");
+      cell.className = "glyph";
+
+      const img = document.createElement("img");
+      const file = name.length === 1 ? `${name}.svg` : `${name}.svg`;
+      img.src = `../src/glyphs/${file}`;
+      img.alt = name;
+
+      const label = document.createElement("label");
+      label.textContent = name;
+
+      // Handle missing images gracefully
+      img.onerror = () => {
+        img.style.opacity = "0.2";
+        label.textContent += " (missing)";
+      };
+
+      cell.appendChild(img);
+      cell.appendChild(label);
+      grid.appendChild(cell);
+    });
+  </script>
+</body>
+</html>
