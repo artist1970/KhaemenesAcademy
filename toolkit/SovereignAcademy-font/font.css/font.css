@@ -1,0 +1,80 @@
+/* ==========================================================
+   Sovereign Academy — Font CSS
+   ----------------------------------------------------------
+   Path: KhaemenesAcademy/toolkit/SovereignAcademy-font/fonts.css/fonts.css
+   Defines @font-face for the SovereignAcademy-Regular.ttf font
+   and provides default body styles + brand utility classes.
+   ========================================================== */
+
+@font-face {
+  font-family: 'Sovereign Academy';
+  src: url('../fonts/SovereignAcademy-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ----------------------------------------------------------
+   Default Body Style
+   ---------------------------------------------------------- */
+
+html, body {
+  font-family: 'Sovereign Academy', 'Cinzel', 'Brandon Grotesque',
+               'Georgia', 'Times New Roman', serif;
+  color: #2b1e14;
+  background-color: #f6f1e7;
+  line-height: 1.6;
+}
+
+/* ----------------------------------------------------------
+   Brand Utility Classes
+   ---------------------------------------------------------- */
+
+/* Use this class when you want to explicitly apply the font */
+.font-sovereign {
+  font-family: 'Sovereign Academy', serif;
+}
+
+/* Golden accent text used for branding or highlights */
+.sovereign-gold {
+  color: #9a7b31;
+}
+
+/* Dark parchment text variation */
+.sovereign-dark {
+  color: #3a2a19;
+}
+
+/* Background texture for demos or ceremonial UI sections */
+.parchment-bg {
+  background: #f6f1e7
+              url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  color: #2b1e14;
+}
+
+/* Decorative drop-cap styling (optional for Academy prose) */
+.dropcap::first-letter {
+  font-family: 'Sovereign Academy', serif;
+  font-size: 3em;
+  float: left;
+  line-height: 0.8;
+  padding-right: 4px;
+  color: #9a7b31;
+}
+
+/* Small footer text for documentation and demos */
+.footer-note {
+  font-size: 0.9em;
+  color: #7a6a56;
+  text-align: center;
+  margin-top: 2em;
+}
+✅ Usage Example
+
+html
+Copy code
+<link rel="stylesheet" href="fonts.css/fonts.css" />
+
+<p class="font-sovereign sovereign-gold">
+  ✦ Khaemenes Academy ✦
+</p>
